@@ -30,10 +30,7 @@ sidebar-category:
         url: "/cv-objectdetection"
         category: 'cv-objectdetection'
       
-      - title: 'Pretrained Models'
-        url: "/cv-pretrained"
-        category: 'cv-pretrained'
-        
+
   - title : "Kaggle 🎯"
     children :
       - title : 'Image Classification'

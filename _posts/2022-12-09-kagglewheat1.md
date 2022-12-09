@@ -307,7 +307,7 @@ in_features = model.roi_heads.box_predictor.cls_score.in_features
 # 사전 훈련된 모델의 머리 부분을 새로운 것으로 fine tuning
 model.roi_heads.box_predictor = FastRCNNPredictor(in_features,num_classes)
 ```
-
+그 다음 훈련 과정에서 사용할 Averager라는 class를 정의할건데, 이는 하나의 epoch loss를 epoch 내의 iteration들의 loss를 iterations수로 나누어서 평균을 내어서 구하는 역할을 한다. 또한 reset 함수는 하나의 epoch가 끝났을 때 loss와 iteration을 초기화하는 역할을 한다.
 
 ```python
 class Averager:
@@ -354,8 +354,6 @@ valid_data_loader = DataLoader(valid_dataset,
                               collate_fn= collate_fn)
 ```
 
-    /opt/conda/lib/python3.7/site-packages/torch/utils/data/dataloader.py:490: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
-      cpuset_checked))
 
 
 
@@ -363,7 +361,7 @@ valid_data_loader = DataLoader(valid_dataset,
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 ```
 
- ### 3. 샘플 데이터 출력하기
+### 3. 샘플 데이터 출력하기
 
 
 ```python
@@ -545,7 +543,7 @@ ax.imshow(sample)
 ![222](https://user-images.githubusercontent.com/77332628/206717450-a95f4a81-7d12-48a0-b86c-384db1731d9a.png)    
 
 
-
+다음에 사용하기 위해 모델을 저장해준다.
 ```python
 torch.save(model.state_dict(), 'fasterrcnn_resnet50_fpn.pth')
 ```

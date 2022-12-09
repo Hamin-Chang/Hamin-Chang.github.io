@@ -542,8 +542,7 @@ ax.imshow(sample)
 
 
     
-![111](https://user-images.githubusercontent.com/77332628/206717442-0e959229-6070-4675-952b-df9f4b6c140e.png)
-    
+![222](https://user-images.githubusercontent.com/77332628/206717450-a95f4a81-7d12-48a0-b86c-384db1731d9a.png)    
 
 
 

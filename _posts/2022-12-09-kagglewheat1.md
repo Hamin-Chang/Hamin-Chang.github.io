@@ -400,7 +400,7 @@ ax.imshow(sample)
 
 
     
-![png](20221209_files/20221209_23_1.png)
+![111](https://user-images.githubusercontent.com/77332628/206717442-0e959229-6070-4675-952b-df9f4b6c140e.png)
     
 
 
@@ -542,7 +542,7 @@ ax.imshow(sample)
 
 
     
-![png](20221209_files/20221209_30_1.png)
+![111](https://user-images.githubusercontent.com/77332628/206717442-0e959229-6070-4675-952b-df9f4b6c140e.png)
     
 
 

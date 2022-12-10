@@ -8,7 +8,7 @@ categories:
 ## Pytorch로 구현한 Faster RCNN으로 Global Wheat Detection 문제풀기 - Train
 
 ### 0. 데이터 준비하기
-이번 글에서는 [**저번 글**](https://hamin-chang.github.io/cv-objectdetection/ffrcnn/)에서 알아본 Faster RCNN를 Pytorch로 구현해서 주어진 이미지들에서 보리의 머리들이 어디에 있는지 찾는 Object Detection을 진행한다. 먼저 필요한 라이브러리들을 로드하고, 데이터들의 경로를 정의한다. 
+이번 글에서는 [**저번 글**](https://hamin-chang.github.io/cv-objectdetection/ffrcnn/)에서 알아본 Faster RCNN를 Pytorch로 구현해서 주어진 이미지들에서 보리의 머리들이 어디에 있는지 찾는 Object Detection을 진행한다. 먼저 필요한 라이브러리들을 로드하고, 데이터들의 경로를 정의한다. (이번 글은 이 캐글 코드([**링크**](https://www.kaggle.com/code/pestipeti/pytorch-starter-fasterrcnn-train))를 참고했다.)
 
 
 ```python

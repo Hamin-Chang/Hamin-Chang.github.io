@@ -340,7 +340,8 @@ ax.imshow(sample)
 
 
     
-![png](20221210_files/20221210_23_1.png)
+![123](https://user-images.githubusercontent.com/77332628/206831752-0a5e8dfb-aad4-46f6-9cf7-59f61e3e20fe.png)
+
     
 
 

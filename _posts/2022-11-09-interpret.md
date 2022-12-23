@@ -1,11 +1,11 @@
 ---
 toc : true
-title : '[DL/CV] 컨브넷 해석 - 모델이 무엇을 학습했는가? 🔍'
+title : '[CV/KERAS] 컨브넷 해석 - 모델이 무엇을 학습했는가? 🔍'
 layout : single
 toc: true
 toc_sticky: true
 categories:
-  - cv-basics
+  - kerasCV
 ---
 
 

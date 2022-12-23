@@ -18,7 +18,7 @@ sidebar-category:
         url : '/MLDLbasics'
         category : 'MLDLbasics'
       
-      - title: "Tensorflow Keras"
+      - title: "Keras"
         url : '/kerasBasic'
         category : 'kerasBasic'
        
@@ -30,10 +30,14 @@ sidebar-category:
         
   - title: "Computer Vision 👓"
     children:
-      - title: "Basics"
-        url: "/cv-basics"
-        category: 'cv-basics'
+      - title: "Keras CV"
+        url : '/kerasCV'
+        category : 'kerasCV'
       
+      - title: "Pytorch CV"
+        url : '/pytorchCV'
+        category : 'pytorchCV'
+        
       - title: 'Image Classification'
         url: "/cv-imageclassification"
         category: 'cv-imageclassification'

@@ -46,6 +46,10 @@ sidebar-category:
         url: "/cv-objectdetection"
         category: 'cv-objectdetection'
       
+      - title: 'ETC'
+        url: "/cv-etc"
+        category: 'cv-etc'
+      
 
   - title : "Kaggle 🎯"
     children :

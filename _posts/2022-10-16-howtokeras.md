@@ -1,10 +1,10 @@
 ---
-title : '[DL/BASIC] 케라스 사용법 - 모델 구축을 위한 기본기 🛠️'
+title : '[DL/KERAS] 케라스 사용법 - 모델 구축을 위한 기본기 🛠️'
 layout: single
 toc: true
 toc_sticky: true
 categories:
-  - MLDLbasics
+  - kerasBasic
 ---
 
 # 5. 케라스 사용법 (Sequential, 함수형 API, Model 서브클래싱, 콜백함수)

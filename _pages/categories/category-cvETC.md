@@ -1,5 +1,5 @@
 ---
-title: "cvETC"
+title: "CV etc"
 layout: archive
 permalink: /cv-etc
 author_profile: true

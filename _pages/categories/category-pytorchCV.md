@@ -1,5 +1,5 @@
 ---
-title: "PytorchCV"
+title: "Pytorch CV"
 layout: archive
 permalink: /pytorchCV
 author_profile: true

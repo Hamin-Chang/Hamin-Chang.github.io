@@ -1,4 +1,3 @@
-
 ---
 title: "Pytorch Basic"
 layout: archive
@@ -12,3 +11,4 @@ sidebar:
 
 {% assign posts = site.categories.pytorchBasic %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+

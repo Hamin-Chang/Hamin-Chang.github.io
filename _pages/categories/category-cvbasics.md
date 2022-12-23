@@ -1,7 +1,7 @@
 ---
-title: "Basics"
+title: "Keras CV"
 layout: archive
-permalink: /cv-basics
+permalink: /kerasCV
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.cv-basics %}
+{% assign posts = site.categories.kerasCV %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

@@ -13,9 +13,21 @@ main:
   
 sidebar-category:
   - title : "ML / DL Basics 🌱 "
-    url : '/MLDLbasics'
-    category : 'MLDLbasics'
-  
+    children:
+      - title: "Basics"
+        url : '/MLDLbasics'
+        category : 'MLDLbasics'
+      
+      - title: "Tensorflow Keras"
+        url : '/kerasBasic'
+        category : 'kerasBasic'
+       
+      - title: "Pytorch"
+        url : '/pytorchBasic'
+        category : 'pytorchBasic'
+      
+      
+        
   - title: "Computer Vision 👓"
     children:
       - title: "Basics"

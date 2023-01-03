@@ -13,7 +13,7 @@ categories:
 ### 1. 컨볼루션이란?
 새로운 모델을 구축하는 것에 대해 배우기 전에, 컨볼루션이라는 컴퓨터 비전의 기본 개념에 대해 알아보자. 이전 글 ([**링크**](https://hamin-chang.github.io/pytorchbasic/birdplane2/))에서 우리는 **평행이동의 불변성**이라는 지역화된 패턴이 이미지의 어떤 위치에 있더라도 동일하게 출력에 영향을 주는 성질을 본 적이 있다. 평행이동 불변성을 보장하는 선형 연산이 존재하는데, 이것이 바로 **컨볼루션 (convolution)**이다. 컨볼루션 (정확하게는 이산 컨볼루션) 은 2차원 이미지에 가중치 행렬을 스칼라곱을 수행하는 것으로 정의한다. 가중치 행렬은 **커널 (kernel)**이라고 부르며, 입력의 모든 이웃에 대해 수행한다. 다음 이미지처럼 컨볼루션은 진행된다.
 
-이미지1
+![cnn1](https://user-images.githubusercontent.com/77332628/210292682-38f8c77e-b94a-43bc-8157-bd0dbfbbd430.jpg)
 
 (출처 : http://jase.tku.edu.tw/articles/jase-202202-25-1-0020)
 
@@ -135,7 +135,7 @@ plt.show()
 
 
     
-![png](Untitled24_files/Untitled24_8_0.png)
+![conv00](https://user-images.githubusercontent.com/77332628/210292686-851292a3-a82f-4108-b9d2-c1ded472eaf1.png)
     
 
 
@@ -144,7 +144,7 @@ plt.show()
 #### 2.1. 경계 패딩하기
 출력 이미지가 입력 이미지보다 작아지는 것은 이미지의 경계에서 이뤄지는 작업에 따른 부작용이다. 컨볼루션 계산을 해보면 각 모서리에는 픽셀의 주변에 값이 없는 픽셀도 있기 때문에 크기가 홀수인 컨볼루션 커널의 길이의 절반만큼 양쪽의 그림이 잘린다. 그렇기 때문에 각 차원에서 딱 두 픽셀만큼 없어진다. 파이토치는 이 문제점을 해결하기 위해 이미지의 경계값에 값이 0인 픽셀들은 **패딩 (padding)**해주는 기능을 제공한다. 다음 이미지에서 패딩을 하면 입력과 출력 이미지의 크기가 똑같이 유지되는 과정을 나타낸다.
 
-이미지2
+![conv2](https://user-images.githubusercontent.com/77332628/210292689-9239fc30-564d-4a56-96b6-c2b62e97233c.gif)
 
 (출처 : https://excelsior-cjh.tistory.com/79)
 
@@ -195,7 +195,8 @@ plt.show()
 
 
     
-![png](Untitled24_files/Untitled24_13_0.png)
+![conv01](https://user-images.githubusercontent.com/77332628/210292687-33fd1df2-8dc3-4d38-a528-00babd30498f.png)
+
     
 
 
@@ -224,13 +225,13 @@ plt.show()
 
 
     
-![png](Untitled24_files/Untitled24_15_0.png)
+![conv02](https://user-images.githubusercontent.com/77332628/210292690-7ba35011-e64f-4e56-8365-dff0ccd59869.png)
     
 
 
 이렇듯 커널에 따라서 중요한 특징을 더 잘 탐지하는 다양한 종류의 필터를 만들어서 사용할 수 있다. 전통적인 필터 설계로는 컴퓨터 비전 전문가들의 역할로 이러한 필터를 최적으로 조합해서 이미지의 특징을 강조하는 식으로 물체를 인식했었지만, 이제는 어떻게 이미지를 가장 효과적으로 인식하는지를 몰라도, 딥러닝을 통해서 데이터로부터 **커널을 자동으로** 만들게 된다. 예를 들어서 이전 글 ([**링크**](https://hamin-chang.github.io/pytorchbasic/birdplane2/#4-%EB%B6%84%EB%A5%98%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%86%90%EC%8B%A4%EA%B0%92))에서 소개한 관측값과 출력값 사이의 음의 크로스엔트로피 손실을 최소화하는 관점에서 컨볼루션 신경망의 역할은 어떤 멀티 채널 이미지를 다른 멀티 채널 이미지로 변환하는 연속된 계층인 필터 더미 집합인 커널을 추정하는 것이며, 여기서 각 채널은 피처에 대응하게 된다. 다음 이미지는 훈련을 통해 자동으로 커널을 학습하는 과정을 나태난다.
 
-이미지3 
+![conv3](https://user-images.githubusercontent.com/77332628/210292691-f30d3db4-6e4a-4d4f-a0ec-8b39d146cc02.png)
 
 (출처 : https://livebook.manning.com/book/deep-learning-with-pytorch/chapter-8/74)
 
@@ -246,7 +247,7 @@ plt.show()
 
 우리는 맥스 풀링을 사용해보자. 맥스 풀링은 다음 이미지처럼 동작한다.
 
-이미지4
+![conv4](https://user-images.githubusercontent.com/77332628/210292692-86fe3c52-46a2-4cda-818a-68fa4528398d.png)
 
 (출처 : https://livebook.manning.com/book/deep-learning-with-pytorch/chapter-8/74)
 
@@ -270,7 +271,7 @@ img.unsqueeze(0).shape, output.shape
 
 이제 컨볼루션과 다운샘플링을 조합해서 어떻게 큰 패턴을 모델이 인식하는지 알아보자. 다음 이미지에서는 8x8 이미지에 3x3 커널을 적용해서 같은 크기의 멀티 채널 출력 이미지를 얻고, 맥스 풀링을 적용해서 4x4 이미지를 얻고 다른 3x3 커널을 적용한다. 두번째 커널셋을 적용할 댸는 반으로 줄어든 이미지 안에서 3x3의 인접 픽셀에 대해 동작하는 것이기 때문에, 원래 입력의 8x8 인접 영역에 대해 효과적으로 동작하는 셈이다. 두번째 커널셋은 첫번째 커널셋의 피처를 받아 추가적인 피처를 추출한다. 이런 메카니즘으로 CIFAR-10에서 얻은 32x32 이미지보다 훨씬 더 복잡한 장면을 인식하는 컨볼루션 신경망을 구축할 수 있다.
 
-이미지 5
+![conv5](https://user-images.githubusercontent.com/77332628/210292694-5e1cda7f-59ea-46f6-99ab-3b69990d943e.png)
 
 (출처 : https://livebook.manning.com/book/deep-learning-with-pytorch/chapter-8/74)
 
@@ -310,7 +311,7 @@ model = nn.Sequential(nn.Conv2d(3,16,kernel_size=3,padding=1),
 
 위 코드는 다음 이미지의 신경망을 구현한 코드다.
 
-이미지6
+![conv6](https://user-images.githubusercontent.com/77332628/210292697-de4520dc-ddcf-46fd-ad30-ca896503ba93.png)
 
 (출처 : https://livebook.manning.com/book/deep-learning-with-pytorch/chapter-8/74)
 
@@ -338,6 +339,4 @@ sum(numel_list), numel_list
 [<파이토치 딥러닝 마스터:모의암 진단 프로젝트로 배우는 신경망 모델 구축부터 훈련,튜닝,모델 서빙까지>(책만, 2022)을 학습하고 개인 학습용으로 정리한 내용입니다.] 도서보기: https://www.gilbut.co.kr/book/view?bookcode=BN003496
 
 
-```python
 
-```

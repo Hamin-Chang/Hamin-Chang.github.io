@@ -4,7 +4,7 @@ layout: single
 toc: true
 toc_sticky: true
 categories:
-  - pytorchBasic
+  - pytorchCV
 ---
 ## 파이토치로 구현하는 컨볼루션(컨볼루션 개념, 패딩, 풀링)
 

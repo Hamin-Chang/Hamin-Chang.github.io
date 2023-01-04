@@ -401,3 +401,5 @@ loaded_model.load_state_dict(torch.load('/content/covolution_example_modelbirds_
 
 
 이번 글에서는 직접 모듈을 만드는 nn.Module 서브클래싱 방법과, 함수형 API에 대해 배웠고, 직접 만든 컨볼루션 신경망으로 훈련하고, 이 모델을 저장하는 방법과 더욱 빠른 훈련을 위해 GPU에서 훈련하는 방법에 대해 배웠다. 다음 글에서는 모델의 성능을 높이기 위한 여러가지 방법에 대해 다뤄보겠다.
+
+[<파이토치 딥러닝 마스터:모의암 진단 프로젝트로 배우는 신경망 모델 구축부터 훈련,튜닝,모델 서빙까지>(책만, 2022)을 학습하고 개인 학습용으로 정리한 내용입니다.] 도서보기: https://www.gilbut.co.kr/book/view?bookcode=BN003496

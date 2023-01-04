@@ -65,7 +65,7 @@ Net 클래스는 nn.Sequential으로 구현했던 모델과 같은 서브모듈�
 
 다음 이미지는 Net 클래스로 구축한 신경망이다.
 
-이미지1
+![conv1](https://user-images.githubusercontent.com/77332628/210529470-7c2ae818-1004-4ca3-924b-c1cd3f2dcb2d.png)
 
 (출처 : https://livebook.manning.com/book/deep-learning-with-pytorch/chapter-8/122)
 

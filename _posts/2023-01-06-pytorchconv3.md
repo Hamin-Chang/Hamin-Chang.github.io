@@ -65,7 +65,7 @@ sum(params), params
 #### 2.1 스킵 커넥션
 이는 카이밍 히와 공저자들이 만든 **잔차 신경망 (residual network)**인 **ResNet**이 해결했다. 잔차신경망의 기법은 간단하다. 다음 이미지처럼 입력을 계층 블럭의 출력에 연결하는 것이다. 
 
-이미지1
+![res1](https://user-images.githubusercontent.com/77332628/211038108-8d221d15-9102-499d-8865-e10fa9446524.png)
 
 (출처:https://arxiv.org/abs/1512.03385)
 
@@ -188,7 +188,7 @@ def training_loop_l2reg(n_epochs, optimizer, model, loss_fn,
 #### 3.2 드랍아웃 : 입력 하나에 과의존 하지 않기
 **드랍아웃 (Dropout)**에 대한 개념은 굉장히 단순하다. 훈련을 반복할 때마다 신경망의 뉴런 출력 중 랜덤으로 몇개를 0으로 만드는 작업을 수행하는 것이다. 이 방법을 활용하면, 매 훈련마다 조금씩 다른 적용되는 뉴런의 필터가 다르기 때문에, 신경망이 각 입력 샘플을 암기하려는 기회를 줄이게 되어서 과적합을 방지한다. 데이터 증강과 비슷한 효과를 내지만, 증강과는 다르게 신경망 전체에 이러한 효과를 낸다.
 
-이미지2
+![res2](https://user-images.githubusercontent.com/77332628/211038114-799412ff-92cb-4ad2-b954-c6990a1db6eb.png)
 
 (출처 :  https://medium.com/analytics-vidhya/a-simple-introduction-to-dropout-regularization-with-code-5279489dda1e)
 

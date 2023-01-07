@@ -13,7 +13,7 @@ categories:
 
 ### 1. RoI Pooling
 
-이미지1
+![pyfrcnn1](https://user-images.githubusercontent.com/77332628/211156319-461968ae-e8ba-411c-bbde-ae9da7eaaceb.png)
 
 먼저 Fast RCNN의 핵심 아이디어인 RoI pooling에 대해 살펴보자. 이전 글 ([**링크**](https://hamin-chang.github.io/cv-objectdetection/frcnn/))에서 언급했듯이, RoI pooling은 원본 이미지를 주입하는 사전 훈련된 VGG16 모델의 마지막 max pooling layer를 대체해서 고정된 크기의 feature map을 다음 fc layer에 전달한다. RoI pooling을 수행하는 feature map의 크기는 14x14x512이다. 이 점을 생각하면서 코드를 살펴보자.
 
@@ -197,7 +197,7 @@ class RCNN(nn.Module):
 
 Classifier의 loss는 Crossentropy loss를 통해서 구하면 되지만, BBR의 loss는 구하기 살짝 복잡하다. Multi-task loss를 다시 한번 보자.
 
-이미지2
+![pyfrcnn2](https://user-images.githubusercontent.com/77332628/211156320-ce1a88c1-0ba0-47ad-b949-abfb23c1dbba.png)
 
 BBR의 loss에는 학습 데이터가 positive/negative sample 여부를 알려주는 index parameter $u$가 곱해져 있다. $u$는 위의 코드에서 mask 변수로 구현되어 있다. mask 변수는 labels에 저장된 배열을 bounding box에 대한 정보가 저장된 배열의 크기에 맞게 변환한 배열이다. mask를 예측 bounding box에 해당하는 bbox 변수와, ground truth box에 해당하는 gt_bbox 변수에 곱해준 후 Smooth L1 loss를 구한다. 그리고 최종적으로 두 loss 사이의 가중치를 조정하는 lambda에 해당하는 lmb 변수를 1로 설정하고 두 loss를 더해서 최종적으로 multi-task loss를 반환한다.
 
@@ -357,3 +357,9 @@ def start_training(n_epoch=2):
 ```
 
 데이터를 로드하는 과정과 검증 셋 데이터를 정의하는 과정과 테스트 셋을 돌리는 과정 등 코드의 모든 과정을 다루지는 못했지만 이렇게 해서 Fast RCNN 모델을 파이토치로 한번 구현해봤다. 
+
+참고  : https://github.com/gary1346aa/Fast-RCNN-Object-Detection-Pytorch,
+
+https://stackoverflow.com/questions/53841509/how-does-adaptive-pooling-in-pytorch-work,
+
+https://herbwood.tistory.com/9?category=867198

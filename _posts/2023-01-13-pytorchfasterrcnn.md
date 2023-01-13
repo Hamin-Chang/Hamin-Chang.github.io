@@ -57,7 +57,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_3_1.png)
+![1](https://user-images.githubusercontent.com/77332628/212281527-ce922d2e-541d-408c-a1dd-8f98d973722b.png)
     
 
 
@@ -83,7 +83,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_6_0.png)
+![2](https://user-images.githubusercontent.com/77332628/212281536-90220e9e-1394-4d3c-8710-c6360312eabe.png)
     
 
 
@@ -99,8 +99,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_8_0.png)
-    
+![3](https://user-images.githubusercontent.com/77332628/212281538-82d5fac2-4c3b-41c2-a86c-88dcb46bed66.png)
 
 
 수정한 이미지의 크기에 맞게 얼룩말이 있는 박스를 다시 시각화 해보자. 이 이미지에서의 박스들의 좌표가 ground truth 값이 될 것이다. 
@@ -137,7 +136,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_10_1.png)
+![4](https://user-images.githubusercontent.com/77332628/212281543-bf5658f8-5da7-4a48-a008-4e9f3796accf.png)
     
 
 
@@ -206,7 +205,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_16_0.png)
+![5](https://user-images.githubusercontent.com/77332628/212281547-c0754078-005c-4882-a576-d49ec359b032.png)
     
 
 
@@ -261,7 +260,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_21_0.png)
+![6](https://user-images.githubusercontent.com/77332628/212281552-09b92547-530f-4cf8-8584-7fff42656449.png)
     
 
 
@@ -319,7 +318,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_25_0.png)
+![7](https://user-images.githubusercontent.com/77332628/212281559-44b3f290-81a3-4097-a592-8fad861bcf7d.png)
     
 
 
@@ -552,7 +551,7 @@ print(anchor_locations[:10, :])
 
 ### 4. RPN (Region Proposal Network)
 
-이미지1
+![11111](https://user-images.githubusercontent.com/77332628/212281576-d088d853-2f95-4215-b473-5ce0addb5626.png)
 
 이제 RPN을 정의할건데, 1.Feature extraction을 통해 생성된 feature map에 3x3 conv 연산을 적용하는 layer를 정의하고, 1x1 conv 연산을 적용해서 9x4(anchor box 종류 수 x bounding box 좌표)개의 channel을 가지는 feature map을 반환하는 Bounding box regressor를 정의한다. 그리고 1x1 conv 연산을 적용해서 9x2(anchor box 수 x object 존재 여부)개의 channel을 가지는 feature map을 반환하는 Classifier를 정의한다.
 
@@ -937,7 +936,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_71_0.png)
+![8](https://user-images.githubusercontent.com/77332628/212281563-ad109df8-5135-4b86-a1e8-349c71ace133.png)
     
 
 
@@ -964,7 +963,7 @@ plt.show()
 
 
     
-![png](Untitled28_files/Untitled28_72_0.png)
+![9](https://user-images.githubusercontent.com/77332628/212281566-54a50258-f073-4346-a785-a34394dc3732.png)
     
 
 
@@ -1071,7 +1070,7 @@ print(output.size())
 
 ### 8. Fast R-CNN
 
-이미지2
+![2222](https://user-images.githubusercontent.com/77332628/212281573-4a37c71a-cb0e-4da7-bef5-077bd264203d.png)
 
 
 마지막 단계로 RoI Pooling을 통해서 얻은 7x7 크기의 feature map을 받을 fc layer를 정의한다. 그리고 class 별로 bounding box coefficients를 예측하는 Bounding Box Regreesor와 class score를 예측하는 Classifier를 정의한다.

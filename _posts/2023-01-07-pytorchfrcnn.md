@@ -1,5 +1,5 @@
 ---
-title : '[DL/Pytorch] 파이토치로 Fast R-CNN 구현하기 📦'
+title : '[CV/Pytorch] 파이토치로 Fast R-CNN 구현하기 📦'
 layout: single
 toc: true
 toc_sticky: true

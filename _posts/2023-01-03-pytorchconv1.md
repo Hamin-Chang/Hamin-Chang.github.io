@@ -1,5 +1,5 @@
 ---
-title : '[DL/Pytorch] 파이토치로 컨볼루션 구현하기 1 🌐'
+title : '[CV/Pytorch] 파이토치로 컨볼루션 구현하기 1 🌐'
 layout: single
 toc: true
 toc_sticky: true

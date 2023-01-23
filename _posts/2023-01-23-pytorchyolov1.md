@@ -12,7 +12,8 @@ categories:
 이번 글에서는 pytorch를 사용해서 YOLO v1을 구현해볼건데, [aladdinpersson님의 github repository](https://github.com/aladdinpersson/Machine-Learning-Collection/tree/master/ML/Pytorch/object_detection/YOLO)에 올라온 코드를 리뷰해 볼 것이다. YOLO v1 모델에 대한 설명은 이전 글([**링크**](https://hamin-chang.github.io/cv-objectdetection/yolov1/))를 참고하면 되겠다. 
 
 ### 1. DarkNet 구현하기
-이미지1
+
+![111](https://user-images.githubusercontent.com/77332628/214053977-e412dbe6-b054-40c5-82d5-02c9d7e9595c.png)
 
 DarkNet은 위 이미지처럼 network의 최종 feature map의 크기가 7x7x30이 되도록 설계하면 되는데, 코드가 흥미로운 점은 network의 각 conv layer의 하이퍼파라미터값을 config 변수에 저장한 후 이를 불러와 사용한다는 것이다.
 
@@ -110,7 +111,8 @@ class Yolov1(nn.Module):
 ```
 
 ### 2. YOLO v1 손실함수 구현
-이미지2
+
+![222](https://user-images.githubusercontent.com/77332628/214053979-398764af-147d-4f14-9738-ec1c323dceec.png)
 
 이번 코드 리뷰에서 중점적으로 살펴봐야할 부분이다. 구현하는 부분에서 최종 feature map에 대해서 처리해줘야 할 과정들이 몇가지 있다.
 

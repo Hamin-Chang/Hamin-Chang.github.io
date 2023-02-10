@@ -36,7 +36,7 @@ Two-stage detector 계열의 모델은 class imbalance 문제를 두가지 측�
 
 이진 분류에서 사용되는 CE loss는 다음과 같다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/217969860-639b15e1-d866-4f28-94f7-6ef164a98140.png)
 
 * $y∈[1,-1]$ : ground truth class
 * $p∈[0,1]$ : 모델이 $y=1$이라고 예측한 확률
@@ -47,21 +47,22 @@ CE의 문제점은 모든 sample에 대한 예측 결과를 동등하게 가중�
 
 이러한 문제를 해결하기 위해 가중치 파라미터 $α∈[0,1]$를 곱해준 Balanced CE가 등장한다. 
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/217969985-c2918775-5498-4c30-ac43-022418967bea.png)
+
 
 $y=1$일 때 $α$를 곱해주고, $y=-1$일 때 $1-α$를 곱해준다. Balanced CEsms positive/negative sample 사이의 균형은 잡아주지만, easy/hard sample에 대해서는 균형을 잡지 못한다. 논문에서는 Balanced CE를 baseline 손실함수로 잡고 실험을 진행한다.
 
 3) **Focal Loss**
 
-이미지3
+![3](https://user-images.githubusercontent.com/77332628/217969864-fa324a3c-f8df-4b6e-9cc5-0aae8acbc0bd.png)
 
 Focal loss는 easy example을 down-weight해서 hard negative sample에 집중해서 학습하는 loss function이다. Focal loss는 **modulating factor** $(1-p_t)^γ$와 **tunable focusing parameter**를 CE에 추가한 형태를 가진다. 
 
-이미지4
+![4](https://user-images.githubusercontent.com/77332628/217969866-328b0ada-bbcb-434a-9ca1-4fe8d6eba5ad.png)
 
 서로 다른 $γ∈[0,5]$값에 따른 loss는 위 이미지를 보면 알 수 있다. 위 그래프에서 파란색 선은 일반 CE를 나타낸다. 파란색은 경사가 완만하며 $p_t$가 높은 sample과 낮은 sample 사이의 차이가 크지 않다. 반면 Focal loss는 focusing parameter가 커질수록 $p_t$가 높은 sample과 낮은 sample 사이의 차이가 커진다는 것을 볼 수 있다.
 
-이미지5
+![5](https://user-images.githubusercontent.com/77332628/217969870-4a22d454-0179-4e9f-87ac-17cdc949adc7.png)
 
 즉, $y=1$인 class임에도 $p_t$가 낮은 경우와 $y=-1$인 class임에도 $p_t$가 높은 경우에는 Focal loss가 높게 나오고, 반대의 경우에는 down-weight 되어 loss 값이 낮게 나타난다. 이를 통해 Focal loss의 두가지 특성을 알 수 있다.
 
@@ -79,7 +80,7 @@ focusing parameter $γ$는 easy sample을 down-weight하는 정도를 부드럽�
 
 논문에서는 Focal loss를 실험하기 위해서 RetinaNet이라는 one-stage detector를 설계한다. RetinaNet은 하나의 backbone network와  각각 classification과 bounding box regression을 수행하는 subnet으로 구성되어 있다. 
 
-이미지6
+![6](https://user-images.githubusercontent.com/77332628/217969871-021e803e-de1d-492c-b3fc-2b109b10cf2b.png)
 
 1) **Feature Pyramid by FPN**
 
@@ -116,6 +117,9 @@ RetinaNet의 BBR subnet은 classification subnet과 비슷한 구조를 가지�
 각 pyramid level의 feature map마다 우리는 translation-invariant한 anchor box를 사용할 것이다. FPN에서 처럼 {1:2, 1:1, 2:1}의 비율의 anchor box를 사용하지만, 더 밀도있는 탐색을 위해서 각 비율마다 {$2^0,2^{1/3},2^{2/3}$}의 anchor box를 사용해서 총 9개의 anchor box를 사용한다. 
 
 ### 3. Inference & 결론
+
+![7](https://user-images.githubusercontent.com/77332628/217969875-e474dfc7-1e80-42a1-9792-5a8b331d05a5.png)
+
 
 RetinaNet은 single FCN 모델로 구성되어 있기 때문에 inference시에는 간단하게 image를 RetinaNet에 forward해주면 된다. Inference시에 속도를 향상시키기 FPN의 각 pyramid level에서 가장 점수가 높은 1000개(threshold = 0.05 confidence)의 prediction만 사용한다. 최종 출력 결과를 도출하기 위해서 2개의 subnetwork의 출력 결과에서 모든 level의 예측 결과는 병합되고, Non-maximum suppression(threshold=0.5)를 적용한다.
 

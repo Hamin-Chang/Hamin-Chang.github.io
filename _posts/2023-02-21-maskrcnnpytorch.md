@@ -282,7 +282,7 @@ class ResNet(nn.Module):
 
 이제 Faster R-CNN의 학습과정을 구현할건데, 개념적인 부분은 [<U>Faster R-CNN 논문 리뷰</U>](https://hamin-chang.github.io/cv-objectdetection/ffrcnn/#4-faster-rcnn-%ED%9B%88%EB%A0%A8%ED%95%98%EA%B8%B0)를 참고하면서 따라오면 더 이해하기 쉬울것이다. (물론 명칭 같은 것들이 완전히 똑같지는 않다.)
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/220282137-206639c1-f562-4936-9698-43dabaf30563.png)
 
 #### 3.1 Proposal layer
 
@@ -399,8 +399,7 @@ Outputs :
 
 그리고 각 RoI를 적절한 level에 할당해야한다. 이는 다음의 공식을 이용해서 진행한다.
 
-
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/220282131-3a1f1158-e2a1-4db1-8b14-f8589349f0cf.png)
 
 
 

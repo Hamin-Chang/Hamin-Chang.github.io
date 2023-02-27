@@ -1,5 +1,5 @@
 ---
-title: '[Kaggle] Pneumonia Detection - Mask R-CNN을 이용해서 폐렴 탐지하기 🤢'
+title: '[Kaggle] Pneumonia Detection - Mask R-CNN으로 폐렴 탐지 🤢'
 toc: true
 toc_sticky: true
 categories:

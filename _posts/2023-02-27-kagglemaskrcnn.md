@@ -420,7 +420,7 @@ print(class_ids)
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_25_1.png)
+![00](https://user-images.githubusercontent.com/77332628/221588257-c63715b1-102f-4184-9749-131832ba3557.png)
     
 
 
@@ -459,7 +459,7 @@ _ = plt.imshow(imggrid[:,:,0], cmap='gray')
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_27_0.png)
+![01](https://user-images.githubusercontent.com/77332628/221588262-64995386-e7e3-4185-bc84-429fa5b8eaed.png)
     
 
 
@@ -1197,7 +1197,7 @@ plt.show()
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_37_0.png)
+![1](https://user-images.githubusercontent.com/77332628/221587809-be6bb392-b875-4546-b593-d0f61a8c30b2.png)
     
 
 
@@ -1340,7 +1340,7 @@ for i in range(6):
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_45_1.png)
+![2](https://user-images.githubusercontent.com/77332628/221587818-f084e1f1-5572-4f55-b663-846b626b8e1a.png)
     
 
 
@@ -1830,7 +1830,7 @@ visualize()
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_52_1.png)
+![3](https://user-images.githubusercontent.com/77332628/221587824-1d7e0a74-9071-41d7-b987-82271840bb13.png)
     
 
 
@@ -1839,7 +1839,7 @@ visualize()
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_52_2.png)
+![4](https://user-images.githubusercontent.com/77332628/221587828-3d2b0ae3-892d-4b08-a268-1978dfa5e562.png)
     
 
 
@@ -1848,7 +1848,8 @@ visualize()
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_52_3.png)
+
+![5](https://user-images.githubusercontent.com/77332628/221587832-89d909bc-2e58-4bd5-bc7e-35c634ea5588.png)
     
 
 
@@ -1857,7 +1858,7 @@ visualize()
 
 
     
-![png](mask-rcnn-and-coco-transfer-learning-lb-0-155_files/mask-rcnn-and-coco-transfer-learning-lb-0-155_52_4.png)
+![6](https://user-images.githubusercontent.com/77332628/221587834-249d6cad-cc6e-4341-aaf9-712c0d891ea2.png)
     
 
 

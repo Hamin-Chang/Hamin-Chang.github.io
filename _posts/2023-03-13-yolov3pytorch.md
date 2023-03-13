@@ -439,3 +439,7 @@ def get_yolo_targets(params):
 ```
 
 이렇게 YOLO v3모델을 직접 코드로 구현해봤다. YOLO layer과 DarkNet까지는 이해가 잘 됐지만 아무래도 손실함수는 좀 복잡한 경향이 있는 것 같다. 특히, IoU가 가장 높은 anchor만 할당하는 과정을 구현한 get_yolo_targets 함수에서 이해가 쉽지 않았다.
+
+출처 및 참고자료
+
+개인 블로그 (https://deep-learning-study.tistory.com/568)

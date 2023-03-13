@@ -11,7 +11,7 @@ categories:
 
 이번 글에서는 이전 글에서 다룬 YOLO v3 모델을 파이토치로 직접 구현해본다. [<U>개인 블로그</U>](https://deep-learning-study.tistory.com/568)를 참고해서 모델을 구현했는데, 참고한 블로그에서는 DataLoader부분부터 모델을 직접 훈련하는 단계까지 모두 구현했지만, 이번 글에서는 YOLO v3의 동작 방식을 이해하는 것이 목적이기 때문에, YOLO layer과 Darknet과 손실함수만 구현하도록 하겠다. YOLO v3에 대한 개념적인 내용은 [<U>YOLO v3 논문 리뷰</U>](https://hamin-chang.github.io/cv-objectdetection/yolov3/)를 참고하면 된다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/224607382-a6b753b9-98e6-4d89-8ad0-b5ce46ced3cf.png)
 
 YOLO v3는 간단히 말해서 DarkNet으로 feature을 추출하고, FPN을 거쳐서 예측을 하는 구조다. 
 
@@ -166,7 +166,8 @@ class YOLOlayer(nn.Module):
 
 YOLO v3에서 사용되는 DarkNet의 구조는 다음과 같다.
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/224607389-8cb29513-c59c-48e3-9d67-1f29e64c57ed.png)
+
 
 
 

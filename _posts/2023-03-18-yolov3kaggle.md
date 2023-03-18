@@ -77,7 +77,7 @@ def _conv_block(inp, convs, skip=True):
 
 다음에는 YOLO v3모델을 직접 코드로 구현할건데, 다음과 같은 모델의 구조를 구현한다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/226091694-aa61e82f-979d-42d1-8de4-8f320a2d9a2c.png)
 
 
 ```python
@@ -1168,7 +1168,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_1.png)
+![2](https://user-images.githubusercontent.com/77332628/226091699-d269c64a-ebef-4e07-94ad-5e9eccccd1a0.png)
     
 
 
@@ -1183,7 +1183,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_3.png)
+![3](https://user-images.githubusercontent.com/77332628/226091700-682a2c16-fc5b-4915-9304-0d1725f600cb.png)
     
 
 
@@ -1203,8 +1203,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_5.png)
-    
+![4](https://user-images.githubusercontent.com/77332628/226091701-7dd29ace-7392-4f6c-b8f4-6599c47dd8d8.png)    
 
 
 
@@ -1217,8 +1216,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_7.png)
-    
+![5](https://user-images.githubusercontent.com/77332628/226091702-0f411136-27eb-4302-b3d4-22b226b458a3.png)    
 
 
 
@@ -1238,8 +1236,8 @@ for file in images:
 
 
     
-![png](333_files/333_18_9.png)
-    
+
+![6](https://user-images.githubusercontent.com/77332628/226091705-54b3c4b8-727c-49f4-8ce7-5dcf74c48b6d.png)    
 
 
 
@@ -1260,8 +1258,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_11.png)
-    
+![7](https://user-images.githubusercontent.com/77332628/226091706-757039b1-a07a-45ec-83e1-77f9e3115309.png)    
 
 
 
@@ -1282,8 +1279,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_13.png)
-    
+![8](https://user-images.githubusercontent.com/77332628/226091708-d49765d8-d434-4b3d-8dd1-e1220f7de91a.png)    
 
 
 
@@ -1307,8 +1303,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_15.png)
-    
+![9](https://user-images.githubusercontent.com/77332628/226091710-b47d968b-14e9-49a6-806a-750966036181.png)    
 
 
 
@@ -1329,8 +1324,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_17.png)
-    
+![10](https://user-images.githubusercontent.com/77332628/226091712-e7bc9762-33a7-44c5-8188-8d756a7613de.png)    
 
 
 
@@ -1348,7 +1342,7 @@ for file in images:
 
 
     
-![png](333_files/333_18_19.png)
-    
+
+![11](https://user-images.githubusercontent.com/77332628/226091714-64769fde-c053-454c-8ae9-4726d655112a.png)    
 
 

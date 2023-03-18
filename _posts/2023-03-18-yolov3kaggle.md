@@ -398,7 +398,7 @@ def draw_boxes(filename, v_boxes, v_labels, v_scores):
     pyplot.show()
 ```
 
-# 3. Create YOLO v3 Model
+### 3. Create YOLO v3 Model
 
 이제 위에서 정의한 함수들을 이용해서 모델을 정의하고, 이미 pre-trained된 가중치를 load해서 저장한다.
 
@@ -1082,7 +1082,7 @@ model.summary()
     __________________________________________________________________________________________________
 
 
-# 4. Prediction
+### 4. Prediction
 
 이제 우리의 모델이 잘 동작하는지 확인하기 위해서 training dataset에 있는 10개의 이미지로 테스트 해보자.
 

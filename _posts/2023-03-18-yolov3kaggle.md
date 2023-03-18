@@ -1340,9 +1340,9 @@ for file in images:
 
 
 
-
     
 
 ![11](https://user-images.githubusercontent.com/77332628/226091714-64769fde-c053-454c-8ae9-4726d655112a.png)    
 
 
+직접 모델을 사용해서 실제로 객체를 탐지해보니 흥미로웠다. 물론 nms나 Weight Reader 같은 함수와 클래스의 작동 방법을 완전히 이해하지는 못했지만, 얼추 대략적인 모델의 사용방법을 알 수 있어서 좋았다.

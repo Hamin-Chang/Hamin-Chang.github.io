@@ -20,7 +20,7 @@ categories:
 
 ### 0. Preview
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/226246358-366b0685-a678-43d6-869e-645238fa81ee.png)
 
 먼저 RefineDet의 전체적인 구조를 살펴보자. RefineDet은 기존의 one-stage detector인 SSD 모델에서 개선된 모델로, SSD와 같이 이미지 전체를 한번에 처리(one-stage detector)하지만 SSD와는 달리 두 개의 단계의 구조를 가지고 있다. SSD에 대한 설명은 [<U>SSD 논문리뷰</U>](https://hamin-chang.github.io/cv-objectdetection/ssd/)를 참고하길 바란다.
 
@@ -30,23 +30,27 @@ RefineDet은 서로 연결되어 있는 ARM, ODM 모듈로 구성되어 있다. 
 
 ### 1. ARM & ODM
 
-이미지2
+
+![2](https://user-images.githubusercontent.com/77332628/226246362-0f56790f-c62f-4f77-9626-4a6e24818c6e.png)
 
 먼저 **ARM(Anchor Refinement Module)**은 생성된 anchor box 중에서 적절한 sample을 골라내고 이를 조정(refine)하는 역할을 한다. anchor의 위치와 크기를 대략적으로(coarsely) 조정하여, 연결되어 있는 후속 모듈에 초기화가 잘 된 anchor를 제공한다. 따라서 ARM은 two-stage detector에서 사용하는 Region Proposal Network와 같은 기능을 수행한다고 볼 수 있다.
 
 ARM은 backbone network의 지정한 layer에서 feature map을 추출하고 해당 layer에 대해서 conv 연산을 추가하느 구조를 가진다. 이를 통해서 refined된 **anchor box의 위치 정보**를 담고 있는 feature map과 해당 anchor box의 fo**reground/background lable**에 대한 정보를 가지고 있는 feature map을 얻을 수 있다. 참고로 foreground/background label에 대한 정보는 preview에서 다룬 class imbalance를 해결하는데 사용된다.
 
-이미지3
+![5](https://user-images.githubusercontent.com/77332628/226246367-ec52dcfd-e985-401f-a5a7-313e230b6cc8.png)
+
 
 그 다음 **ODM(Object Detection Module)**은 ARM으로부터 refined anchor에 대한 정보를 입력으로 받아서 객체에 대한 정확한 위치와 class label을 예측하는 역할을 한다. 위 이미지에서 ARM과 ODM을 연결해주는 TCB(Transfer Connection Block)은 바로 뒤에서 다루겠다. ODM은 TCB에서 출력된 feature map에 conv 연산을 적용해서 **객체의 세밀한 위치와 class label에 대한 정보**를 담고 있는 feature map을 출력한다.
 
 ### 2. TCB
 
-이미지3
+
+![3](https://user-images.githubusercontent.com/77332628/226246363-bde38b85-fff7-49cd-a42a-0d968346b8ed.png)
 
 TCB(Transfer Connection Block)은 ARM과 ODM을 연결시키기 위해서 ARM의 서로 다른 layer로부터 비롯된 feature map을 ODM이 요구하는 형태에 맞게 변환시켜주는 역할을 하는데, 이를 통해 ODM이 ARM과 feature를 공유할 수 있도록 해준다. (참고로 anchor의 정보 feature map만 TCB에 입력하고, positive/negative label feature map은 TCB에 입력하지 않는다.)
 
-이미지4
+
+![4](https://user-images.githubusercontent.com/77332628/226246364-3f788956-2cc0-47b9-bd30-ac6e0af38d17.png)
 
 TCB는 2개의 feature map을 입력받는다. feature map1은 ARM으로부터 anchor와 관련된 feature map인데, 이를 일련의 conv layer(conv-relu-conv)를 거쳐서 channel 수를 256으로 맞춘다.
 
@@ -73,6 +77,9 @@ ARM을 사용하지 않아서 Two-step Cascaded Regression을 수행하지 않�
 
 
 ### 4. Training RefineDet
+
+![5](https://user-images.githubusercontent.com/77332628/226246367-ec52dcfd-e985-401f-a5a7-313e230b6cc8.png)
+
 
 1) Multi-scale feature extraction from backbone netwrok
 

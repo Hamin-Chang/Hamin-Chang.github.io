@@ -9,7 +9,7 @@ categories:
 
 ## Pytorch로 M2Det 구현하기
 
-이미지0
+![0](https://user-images.githubusercontent.com/77332628/229323072-03a28773-38d7-4d02-9ebb-ced6e5dbb909.png)
 
 이번 글에서는 M2Det를 실제 pytorch 코드로 구현 해본다. 코드는 [<U>qijiezhao의 repository</U>](https://github.com/VDIGPKU/M2Det)에서 가져왔다. M2Det에 대한 자세한 동작 방법에 대한 설명은 [<U>M2Det 논문리뷰</U>](https://hamin-chang.github.io/cv-objectdetection/M2DET/)을 참고하길 바란다. 
 
@@ -46,7 +46,8 @@ class BasicConv(nn.Module):
 #### 1.1 TUM
 TUM 모듈은 이름 그대로 TUM의 역할을 하는 모듈이다.
 
-이미지1
+
+![1](https://user-images.githubusercontent.com/77332628/229323075-8ea2d5ec-a19c-4cbe-8278-e9df017e535d.png)
 
 여기서 특이한 점은 upsample을 interpolation 함수를 이용해서 수행한다는 점이다.
 
@@ -161,7 +162,7 @@ def get_backbone(backbone_name='vgg16'):
 ### 1.2 SFAM
 SFAM 모듈은 이름 그대로 SFAM 역할을 하는 모듈이다.
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/229323078-6a15ff6e-7cfe-4aa7-b222-92afba6e94bd.png)
 
 위 이미지에서의 연산을 수행하는데, 이때 global average pooling은 AdaptiveAvgPool2d를 사용해서 수행한다.
 
@@ -244,7 +245,8 @@ def print_info(info, _type=None):
 
 FFM 모듈은 TUM과 SFAM과는 다르게 사전에 모듈을 정의하지 않고 바로 M2Det 클래스 중간에 구현한다.
 
-이미지3
+
+![3](https://user-images.githubusercontent.com/77332628/229323079-92d5f3c5-5f47-4e9a-b4d8-035f954b84b6.png)
 
 (FFM의 동작 이미지)
 

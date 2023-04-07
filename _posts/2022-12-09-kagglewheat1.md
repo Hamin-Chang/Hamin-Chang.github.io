@@ -1,5 +1,5 @@
 ---
-title: '[Kaggle] Global Wheat - Pytorch Faster RCNN (1) 🌾'
+title: '[OD/Kaggle] Global Wheat - Pytorch Faster RCNN (1) 🌾'
 toc: true
 toc_sticky: true
 categories:

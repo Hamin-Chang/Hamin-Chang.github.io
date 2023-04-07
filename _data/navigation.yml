@@ -34,13 +34,13 @@ sidebar-category:
         url : '/CVBasic'
         category : 'CVBasic'
       
-      - title: "Pytorch Object Detection"
-        url : '/pytorchOD'
-        category : 'pytorchOD'
+      - title: "Object Detection Code"
+        url : '/ODCode'
+        category : 'ODCode'
         
-      - title: 'Pytorch Image classification'
-        url: "/pytorchIC"
-        category: 'pytorchIC'
+      - title: 'Image classification Code'
+        url: "/ICCode"
+        category: 'ICCode'
         
       - title: 'Image Classification'
         url: "/cv-imageclassification"

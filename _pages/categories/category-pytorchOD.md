@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.pytorchCV %}
+{% assign posts = site.categories.pytorchOD %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: "CV etc"
 layout: archive
-permalink: /cv-etc
+permalink: /pytorchIC
 author_profile: true
 sidebar_main: true
 sidebar:

@@ -1,5 +1,5 @@
 ---
-title : '[DL/CV] 객체 탐지 - RefineDet 🔧'
+title : '[OD/개념] 객체 탐지 - RefineDet 🔧'
 layout : single
 toc : true
 toc: true

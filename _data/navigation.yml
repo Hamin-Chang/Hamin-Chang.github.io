@@ -31,8 +31,8 @@ sidebar-category:
   - title: "Computer Vision 👓"
     children:
       - title: "Keras CV"
-        url : '/kerasCV'
-        category : 'kerasCV'
+        url : '/CVBasic'
+        category : 'CVBasic'
       
       - title: "Pytorch Object Detection"
         url : '/pytorchOD'

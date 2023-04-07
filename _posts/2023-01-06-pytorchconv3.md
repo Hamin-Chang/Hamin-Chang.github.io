@@ -4,7 +4,7 @@ layout: single
 toc: true
 toc_sticky: true
 categories:
-  - pytorchCV
+  - CVBasic
 ---
 
 ## 파이토치로 구현하는 컨볼루션 (모델 너비 늘리기, 깊은 모델 만들기(잔차 연결), L2 정규화, 드랍아웃, 배치 정규화)

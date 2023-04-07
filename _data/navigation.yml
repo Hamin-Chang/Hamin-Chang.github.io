@@ -30,7 +30,7 @@ sidebar-category:
         
   - title: "Computer Vision 👓"
     children:
-      - title: "Keras CV"
+      - title: "CV Basics"
         url : '/CVBasic'
         category : 'CVBasic'
       

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[IC/논문] 사전 훈련된 모델 알아보기 - Inception-v3 📚"
+title:  "[IC/개념] 사전 훈련된 모델 알아보기 - Inception-v3 📚"
 toc: true
 toc_sticky: true
 categories:

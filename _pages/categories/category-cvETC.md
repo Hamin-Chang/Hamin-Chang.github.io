@@ -1,5 +1,5 @@
 ---
-title: "CV etc"
+title: "Pytorch Image classification"
 layout: archive
 permalink: /pytorchIC
 author_profile: true

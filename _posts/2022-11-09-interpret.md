@@ -5,7 +5,7 @@ layout : single
 toc: true
 toc_sticky: true
 categories:
-  - kerasCV
+  - CVBasic
 ---
 
 

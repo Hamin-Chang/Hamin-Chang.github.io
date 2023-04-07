@@ -1,5 +1,5 @@
 ---
-title : '[DL/CV] 객체 탐지 - RetinaNet ⚖️'
+title : '[OD/개념] 객체 탐지 - RetinaNet ⚖️'
 layout : single
 toc : true
 toc: true

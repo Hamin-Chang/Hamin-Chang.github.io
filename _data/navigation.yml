@@ -34,9 +34,13 @@ sidebar-category:
         url : '/kerasCV'
         category : 'kerasCV'
       
-      - title: "Pytorch CV"
-        url : '/pytorchCV'
-        category : 'pytorchCV'
+      - title: "Pytorch Object Detection"
+        url : '/pytorchOD'
+        category : 'pytorchOD'
+        
+      - title: 'Pytorch Image classification'
+        url: "/pytorchIC"
+        category: 'pytorchIC'
         
       - title: 'Image Classification'
         url: "/cv-imageclassification"
@@ -46,9 +50,7 @@ sidebar-category:
         url: "/cv-objectdetection"
         category: 'cv-objectdetection'
       
-      - title: 'ETC'
-        url: "/cv-etc"
-        category: 'cv-etc'
+      
       
 
   - title : "Kaggle 🎯"

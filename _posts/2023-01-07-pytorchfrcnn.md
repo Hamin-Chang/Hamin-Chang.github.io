@@ -4,7 +4,7 @@ layout: single
 toc: true
 toc_sticky: true
 categories:
-  - pytorchOD
+  - ODCode
 ---
 
 ## Pytorch로 Fast R-CNN 구현하기

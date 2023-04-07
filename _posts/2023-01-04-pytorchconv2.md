@@ -4,7 +4,7 @@ layout: single
 toc: true
 toc_sticky: true
 categories:
-  - pytorchCV
+  - CVBasic
 ---
 ## 파이토치로 구현하는 컨볼루션(nn.Module 서브클래싱, 함수형 API, 모델 저장, GPU 훈련)
 

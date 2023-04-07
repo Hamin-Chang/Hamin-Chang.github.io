@@ -1,7 +1,7 @@
 ---
 title: "Pytorch Object Detection"
 layout: archive
-permalink: /pytorchOD
+permalink: /ODCode
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.pytorchOD %}
+{% assign posts = site.categories.ODCode %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

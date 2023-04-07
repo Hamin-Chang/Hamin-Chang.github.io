@@ -1,5 +1,5 @@
 ---
-title: '[Kaggle] Vehicle Detection - YOLO v3로 자동차 탐지 🚗'
+title: '[OD/Kaggle] Vehicle Detection - YOLO v3로 자동차 탐지 🚗'
 toc: true
 toc_sticky: true
 categories:

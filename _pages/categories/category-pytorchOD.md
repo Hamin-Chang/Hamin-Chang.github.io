@@ -1,5 +1,5 @@
 ---
-title: "Pytorch CV"
+title: "Pytorch Object Detection"
 layout: archive
 permalink: /pytorchOD
 author_profile: true

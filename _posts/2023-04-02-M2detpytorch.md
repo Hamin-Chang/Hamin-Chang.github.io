@@ -1,10 +1,10 @@
 ---
-title : '[CV/Pytorch] 파이토치로 M2Det 구현하기 🍰' 
+title : '[OD/Pytorch] 파이토치로 M2Det 구현하기 🍰' 
 layout: single
 toc: true
 toc_sticky: true
 categories:
-  - pytorchOD
+  - ODCode
 ---
 
 ## Pytorch로 M2Det 구현하기

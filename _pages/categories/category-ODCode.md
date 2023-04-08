@@ -1,5 +1,5 @@
 ---
-title: "Pytorch Object Detection"
+title: "Object Detection Code"
 layout: archive
 permalink: /ODCode
 author_profile: true

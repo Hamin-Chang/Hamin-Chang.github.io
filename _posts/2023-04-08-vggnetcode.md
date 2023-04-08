@@ -13,7 +13,7 @@ categories:
 
 논문에서 사용한 깊이가 서로 다른 4개의 모델을 구축하는데, 이는 CONFIGURES를 통해서 모델마다 깊이가 다르도록 설계한다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/230725272-bf516031-385d-4e1f-a440-251ead29f785.jpg)
 
 
 ```python

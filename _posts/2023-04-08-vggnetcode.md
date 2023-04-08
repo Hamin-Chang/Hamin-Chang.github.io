@@ -11,6 +11,8 @@ categories:
 
 이번 글에서는 VGGNet을 실제 pytorch 코드로 구현해본다. [<U>roytravel의 repository</U>](https://github.com/roytravel/paper-implementation/blob/master/vggnet/vggnet.pyhttps://github.com/roytravel/paper-implementation/blob/master/vggnet/vggnet.py)의 코드를 사용한다.
 
+
+### 1. VGGNet 모듈 
 논문에서 사용한 깊이가 서로 다른 4개의 모델을 구축하는데, 이는 CONFIGURES를 통해서 모델마다 깊이가 다르도록 설계한다.
 
 ![1](https://user-images.githubusercontent.com/77332628/230725272-bf516031-385d-4e1f-a440-251ead29f785.jpg)
@@ -87,6 +89,7 @@ class VGGNet(nn.Module):
                 in_channels += value
         return nn.Sequential(*layers)
 ```
+### 2. VGG19 학습 구현
 
 이제 위의 코드로 구축한 VGGNet 중 VGG19를 사용해서 STL10 dataset을 사용한 간단한 학습 과정을 구현한다.
 

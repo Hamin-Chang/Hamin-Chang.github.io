@@ -1,5 +1,5 @@
 ---
-title: "Keras CV"
+title: "Computer Vision Basics"
 layout: archive
 permalink: /CVBasic
 author_profile: true

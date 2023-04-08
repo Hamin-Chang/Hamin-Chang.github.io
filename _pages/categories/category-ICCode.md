@@ -1,5 +1,5 @@
 ---
-title: "Pytorch Image classification"
+title: "Image classification Code"
 layout: archive
 permalink: /ICCode
 author_profile: true

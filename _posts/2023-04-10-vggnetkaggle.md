@@ -66,7 +66,7 @@ plt.imshow(out_img)
 
 
     
-![png](mask-and-social-distancing-detection-using-vgg19_files/mask-and-social-distancing-detection-using-vgg19_4_1.png)
+![1](https://user-images.githubusercontent.com/77332628/231181461-2f4d37be-58b4-41c9-a3a8-ddc88910dc8f.png)
     
 
 
@@ -106,7 +106,7 @@ else:
 
 
     
-![png](mask-and-social-distancing-detection-using-vgg19_files/mask-and-social-distancing-detection-using-vgg19_6_0.png)
+![2](https://user-images.githubusercontent.com/77332628/231181472-de5bf493-7edc-4236-87ef-dd39451a4dc7.png)
     
 
 
@@ -271,8 +271,7 @@ sample_mask_img = sample_mask_img / 255.0
 
 
 
-    
-![png](mask-and-social-distancing-detection-using-vgg19_files/mask-and-social-distancing-detection-using-vgg19_14_0.png)
+![3](https://user-images.githubusercontent.com/77332628/231181474-e6fc660d-cf74-44db-b809-24cfd2e1ba3a.png)
     
 
 
@@ -334,8 +333,8 @@ else:
 
 
 
-    
-![png](mask-and-social-distancing-detection-using-vgg19_files/mask-and-social-distancing-detection-using-vgg19_19_0.png)
+![4](https://user-images.githubusercontent.com/77332628/231181475-05f0581f-b4ba-4dde-a60d-03902a54a391.png)
+
     
 
 

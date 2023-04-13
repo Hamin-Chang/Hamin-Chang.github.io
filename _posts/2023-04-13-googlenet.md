@@ -126,7 +126,7 @@ Inception module로서 다양한 feature를 추출하기 위해 1x1, 3x3, 5x5 co
 
 auxiliary classifier가 보조 classifier인만큼, **지나치게 영향을 주는 것을 막기 위해 auxiliary classifier의 loss에 0.3을 곱**하고, **실제 테스트 시에는 auxiliary classifier를 사용하지 않고**, 모델 제일 끝단의 softmax만을 사용하였다.
 
-다음 이미에서 박스 친 부분이 모델에서의 auxiliary classifier이다.
+다음 이미지에서 박스 친 부분이 모델에서의 auxiliary classifier이다.
 
 ![12](https://user-images.githubusercontent.com/77332628/231642373-463847cd-f2c6-4c67-8b0e-cdbd525d0550.png)
 

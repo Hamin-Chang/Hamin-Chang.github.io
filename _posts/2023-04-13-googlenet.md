@@ -33,7 +33,7 @@ Deep neural network의 성능을 향상시키기 위해서는 depth, number of l
 
 (왼쪽이 **sparse**, 오른쪽이 **dense** connection)
 
-Arora et al.에 따르면 아주 거대한 sparse deep nueral network로 데이터셋의 확률분포가 표현 가능하다면, 최적의 네트워크는 마지막 layer의 activation의 correlation statistics를 분석하고 다음 이미지처럼 **highly correlated output으로 묶으면서 구성**할 수 있다고 한다. 
+Arora et al.에 따르면 아주 거대한 sparse deep neural network로 데이터셋의 확률분포가 표현 가능하다면, 최적의 네트워크는 마지막 layer의 activation의 correlation statistics를 분석하고 다음 이미지처럼 **highly correlated output으로 묶으면서 구성**할 수 있다고 한다. 
 
 ![3](https://user-images.githubusercontent.com/77332628/231642350-2b285f34-7fd8-419a-9152-7435e929593d.png)
 

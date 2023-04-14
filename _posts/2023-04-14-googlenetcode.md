@@ -34,7 +34,7 @@ class conv_block(nn.Module):
 
 이제 convblock 클래스를 활용해서 Inception_block 클래스를 구현한다. Inception_block 클래스에서 4개의 branch를 만드는데 이는 Inception module에서 네 갈래로 갈라지는 것을 구현한 것이다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/231975347-6a8a6e27-39d6-4c13-95e1-4392aaefdb90.png)
 
 
 ```python
@@ -61,7 +61,7 @@ class Inception_block(nn.Module):
 
 ### 2. Auxiliary classifier
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/231975353-fb3775bd-ef76-4751-8fb6-3b8cd28f1d71.png)
 
 위 이미지의 auxiliary classifier를 구현한다. 1x1 conv의 output channel의 개수와 dropout rate는 논문과 같이 각각 128개와 0.7로 설정했다.
 
@@ -93,7 +93,8 @@ class InceptionAux(nn.Module):
 
 다음 표의 아키텍처를 따라서 코드를 구현했다고 한다.
 
-이미지3
+![3](https://user-images.githubusercontent.com/77332628/231975357-043655a5-9441-4f3d-a112-ba203a024349.png)
+
 
 
 ```python

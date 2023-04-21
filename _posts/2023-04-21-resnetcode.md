@@ -11,12 +11,13 @@ categories:
 
 이번 글에서는 ResNet을 실제 pytorch 코드로 구현해본다. ResNet의 개념은 [**<U>ResNet 논문리뷰</U>**](https://hamin-chang.github.io/cv-imageclassification/resnet/)를 참고하길 바란다. ResNet 구현 코드는 [**<U>roytravel의 repository</U>**](https://github.com/roytravel/paper-implementation/blob/master/resnet/resnet.py)의 코드를 사용했다.
 
+### 1. Basic building block (Identity shortcut)
+
 먼저 ResNet의 가장 핵심인 Identity shortcut을 사용한 Basic building block을 구현한다.
 
 (다음 이미지의 왼쪽)
 
-이미지1
-
+![1](https://user-images.githubusercontent.com/77332628/233517177-c0e91c1e-504f-4abe-a5a4-800a9fa7c64e.png)
 
 ```python
 import torch
@@ -52,12 +53,13 @@ class BasicBlock(nn.Module):
         x = self.relu2(x)
         return x
 ```
+### 2. Bottleneck building block (Projection shortcut)
 
 이제 또 다른 구조인 Projection shortcut 방식의 Bottleneck building block을 구현한다.
 
 (다음 이미지의 오른쪽)
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/233517177-c0e91c1e-504f-4abe-a5a4-800a9fa7c64e.png)
 
 
 ```python
@@ -102,7 +104,9 @@ class BottleNeck(nn.Module):
 
 위 두 구조를 이용해서 ResNet 클래스를 구성한다. 이때 다음 표처럼 depth에 따라 layer를 다르게 구성할 수 있도록 ResNet 클래스를 구성한다.
 
-이미지2
+### 3. depth에 따른 ResNet 
+
+![2](https://user-images.githubusercontent.com/77332628/233517181-caf89080-254f-4f02-a10d-31d9e0196dfc.png)
 
 
 ```python
@@ -185,3 +189,7 @@ print(y.size())
 
     torch.Size([1, 10])
 
+출처 및 참고문헌 :
+
+1. https://github.com/roytravel/paper-implementation/blob/master/resnet/train.py
+2. https://roytravel.tistory.com/339

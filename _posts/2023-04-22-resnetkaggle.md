@@ -70,8 +70,7 @@ show_sample(img, label)
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_7_1.png)
-    
+![1](https://user-images.githubusercontent.com/77332628/233769162-20bc749b-de07-47dc-b3d9-1ea9f7baaa76.png)    
 
 
 
@@ -118,8 +117,7 @@ show_batch(train_dl)
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_10_0.png)
-    
+![2](https://user-images.githubusercontent.com/77332628/233769164-d9c5d058-3a17-4a41-ad4f-af61a3897c04.png)    
 
 
 
@@ -516,8 +514,7 @@ plot_losses(history)
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_24_0.png)
-    
+![3](https://user-images.githubusercontent.com/77332628/233769165-d39b149a-a3ae-466f-8301-c3f512b02d8c.png)    
 
 
 
@@ -537,8 +534,7 @@ plot_accuracy(history)
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_25_0.png)
-    
+![4](https://user-images.githubusercontent.com/77332628/233769166-89057410-5fb7-43b7-976e-156178a8a2db.png)    
 
 
 
@@ -569,8 +565,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_0.png)
-    
+![5](https://user-images.githubusercontent.com/77332628/233769167-75eb1a27-4057-4209-b270-dda71347fcee.png)    
 
 
 
@@ -581,8 +576,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_2.png)
-    
+![6](https://user-images.githubusercontent.com/77332628/233769169-2e5b487a-5b2e-43a4-a709-c6bd22386055.png)    
 
 
 
@@ -593,8 +587,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_4.png)
-    
+![7](https://user-images.githubusercontent.com/77332628/233769170-a50c6a0b-987b-4214-bef8-b497e431d980.png)    
 
 
 
@@ -605,8 +598,8 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_6.png)
-    
+
+![8](https://user-images.githubusercontent.com/77332628/233769171-d9f1b521-ebdf-46c5-937c-65be12fff901.png)    
 
 
 
@@ -617,8 +610,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_8.png)
-    
+![9](https://user-images.githubusercontent.com/77332628/233769173-9ff42d12-13e4-45f9-abf3-d6a63260f4a7.png)    
 
 
 
@@ -629,8 +621,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_10.png)
-    
+![10](https://user-images.githubusercontent.com/77332628/233769174-8ce4fe12-463b-4658-bf3b-bdf78dcd666f.png)    
 
 
 
@@ -641,8 +632,8 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_12.png)
-    
+
+![11](https://user-images.githubusercontent.com/77332628/233769175-524fb557-00c4-4069-8478-bfc8ad774d72.png)    
 
 
 
@@ -653,8 +644,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_14.png)
-    
+![13](https://user-images.githubusercontent.com/77332628/233769177-a08ab9a2-69c4-4863-8655-658892f106c7.png)    
 
 
 
@@ -665,8 +655,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_16.png)
-    
+![14](https://user-images.githubusercontent.com/77332628/233769178-d4f38439-755e-4a24-ad8d-b88a52360ab6.png)    
 
 
 
@@ -677,8 +666,7 @@ for x in random_inputs:
 
 
     
-![png](pytorch-garbage-classification-95-accuracy_files/pytorch-garbage-classification-95-accuracy_27_18.png)
-    
+![15](https://user-images.githubusercontent.com/77332628/233769179-3507252c-565f-42f7-9fca-97d6dd7c8501.png)    
 
 
 

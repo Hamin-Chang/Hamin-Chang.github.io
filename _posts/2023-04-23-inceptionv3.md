@@ -52,7 +52,7 @@ GoogLeNet에서 보조 분류기를 사용하면 신경망이 수렴하는데 �
 #### 1.4 Grid Size Reduction
 일반적인 CNN 신경망은 feature map의 크기를 줄이기 위해 pooling 연산을 사용하는데, pooling을 하면 나타나는 신경망의 표현력이 감소되는 representational bottleneck을 피하기 위해 필터 수를 증가시킨다. 이는 신경망의 표현력을 포기하거나 많은 연산 비용을 감수하는 선택을 해야한다. 예를 들어, dxd 크기를 가진 k개의 feature map은 pooling layer를 거쳐서 (d/2)x(d/2) 크기의 2k feature map이 된다. 연산량을 계산하면, 전자는 $2d^2k^2$가 되고, 후자는 $2(d/2)^2k^2$가 된다. 다음 이미지에서 왼쪽은 연산량이 낮은 대신 표현력이 감소하고, 오른쪽은 표현력이 감소하지 않는 대신 연산량이 늘어난다.
 
-이미지11
+![11](https://user-images.githubusercontent.com/77332628/233845625-3bda35d5-39f9-4ab5-b3c4-c607d8bfc4cf.png)
  
 
 하지만 Inception-v2에서는 표현력을 감소시키지 않고 연산량을 감소시키는 방법을 사용한다. 
@@ -72,15 +72,16 @@ GoogLeNet에서 보조 분류기를 사용하면 신경망이 수렴하는데 �
 
 * 첫번째 inception module
 
-이미지12
+![12](https://user-images.githubusercontent.com/77332628/233845627-cb1f97bd-6870-452c-a557-c87b91926605.png)
 
 * 두번째 inception module
 
-이미지13
+![13](https://user-images.githubusercontent.com/77332628/233845628-2a639417-4d69-446e-b094-59a03b77990f.png)
 
 * 세번째 inception module
 
-이미지14
+![14](https://user-images.githubusercontent.com/77332628/233845629-47bc8ed5-5968-48ff-a187-5385a495538d.png)
+
 
 ### 2. Inception-v3, 2016
 Inception-v3는 Inception-v2의 architecture는 그대로 가져가고, 다음의 몇가지 기법들을 적용해서 최고의 성능을 내는 모델이다.
@@ -88,7 +89,7 @@ Inception-v3는 Inception-v2의 architecture는 그대로 가져가고, 다음�
 #### 2.1 Model Regularization via Label Smoothing
 **Label Smoothing** 기법은 정규화 테크닉 하나로 간단하면서도 모델의 일반화 성능을 높여서 주목 받은 기법이다. Label Smoothing에 관해서 간단히 설명하자면 만약 기존 label이 [0,1,0,0]이라면 레이블 스무딩을 적용하면 [0.025,0.925,0.025,0.025]가 되는데, 이는 정답에 대한 확신을 감소시켜서 모델의 일반화 성능을 향상시킨다. 다음은 논문에 나와있는 Label smoothing 수식이다.
 
-이미지10
+![10](https://user-images.githubusercontent.com/77332628/233845623-540aa720-e9f6-4f6e-9ebc-4aa44d3c2a3a.png)
 
 #### 2.2 기타 기법들
 * optimizer를 Momentum optimizer 에서 RMSProp optimizer로 변경

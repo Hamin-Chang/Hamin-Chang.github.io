@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[IC/개념] 이미지 분류 - Inception-v2,3 📚"
+title:  "[IC/개념] 이미지 분류 - Inception-v2,3 ➰"
 toc: true
 toc_sticky: true
 categories:

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[IC/개념] 이미지 분류 - Inception-v4 & Inception-ResNet 📚"
+title:  "[IC/개념] 이미지 분류 - Inception-v4 & Inception-ResNet ➰"
 toc: true
 toc_sticky: true
 categories:

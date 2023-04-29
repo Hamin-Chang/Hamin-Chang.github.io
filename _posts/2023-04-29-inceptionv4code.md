@@ -44,7 +44,7 @@ class BasicConv2d(nn.Module):
 
 stem 클래스를 정의한다.
 
-이미지1
+![1](https://user-images.githubusercontent.com/77332628/235304514-0ce0880f-8300-446e-86e4-bdf0ddf0ede4.png)
 
 
 ```python
@@ -102,7 +102,7 @@ print('Stem output size:',output_Stem.size())
 
 다음으로 Inception-ResNetA module 클래스를 정의한다.
 
-이미지2
+![2](https://user-images.githubusercontent.com/77332628/235304516-01c7f5f7-97c5-4791-bf39-baa84a9124a2.png)
 
 
 ```python
@@ -150,7 +150,8 @@ print('Stem output size:',output_resA.size())
 
 다음으로 ReductionA 클래스를 정의한다.
 
-이미지3
+
+![3](https://user-images.githubusercontent.com/77332628/235304518-30876dff-531c-444e-ae19-e6ddeaa0ef42.png)
 
 위 이미지에서 ReductionA에서는 k=256, l=256, m=384, n=384를 사용한다.
 
@@ -186,7 +187,7 @@ print('Stem output size:',output_rA.size())
 
 Inception-ResNetB module 클래스 정의한다.
 
-이미지4
+![4](https://user-images.githubusercontent.com/77332628/235304520-74134531-8a7a-4689-9c7d-219d29480c54.png)
 
 
 
@@ -229,7 +230,7 @@ print('Stem output size:',output_resB.size())
 
 ReductionB module 클래스를 정의한다.
 
-이미지5
+![5](https://user-images.githubusercontent.com/77332628/235304522-5dbc614d-de1b-4125-8c28-21a54a1b7755.png)
 
 
 ```python
@@ -267,7 +268,9 @@ print('output size:', output_rB.size())
 
 마지막으로 Inception-ResNetC module 클래스를 정의한다.
 
-이미지6
+
+
+![6](https://user-images.githubusercontent.com/77332628/235304523-0957a990-1ce4-4649-9b92-a136a60ce681.png)
 
 
 ```python
@@ -309,7 +312,8 @@ print('output size:', output_resC.size())
 
 이제 위에서 정의한 모듈들을 사용해서 전체 모델을 구축한다.
 
-이미지7
+![7](https://user-images.githubusercontent.com/77332628/235304525-b01bdbb4-50ed-4256-99bb-1c573f33dffb.png)
+
 
 
 ```python

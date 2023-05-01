@@ -178,6 +178,7 @@ test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=True)
 ```
 
     16464 2058 2058
+    
 ### 2. Inception-v3 fine tuning
 
 이제 사전 훈련된 inception-v3를 불러오자.

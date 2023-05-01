@@ -80,8 +80,8 @@ for i in range(4):
 
 
     
-![png](dogs-inception-pytorch-implementation_files/dogs-inception-pytorch-implementation_5_0.png)
-    
+![0](https://user-images.githubusercontent.com/77332628/235424561-68983948-33f2-463f-852b-815cfd29da0c.png)
+
 
 
 
@@ -178,7 +178,7 @@ test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=True)
 ```
 
     16464 2058 2058
-
+### 2. Inception-v3 fine tuning
 
 이제 사전 훈련된 inception-v3를 불러오자.
 
@@ -645,7 +645,7 @@ model.fc
       (4): LogSoftmax()
     )
 
-
+### 3. Model Training & Validation
 
 모델을 GPU로 옮기고 손실함수와 optimizer를 정의해주고, 120개의 class에 index를 지정해준다.
 
@@ -1085,7 +1085,7 @@ history
 </table>
 </div>
 
-
+### 4. Model Testing
 
 6번의 epoch 이후에 early stopping을 적용한 결과 validation 대략 78%로 overfitting은 안된것으로 보인다. 이제 test dataset으로 test하자.
 

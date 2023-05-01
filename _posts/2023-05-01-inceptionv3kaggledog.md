@@ -182,6 +182,7 @@ test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=True)
 
 이제 사전 훈련된 inception-v3를 불러오자.
 
+![1](https://user-images.githubusercontent.com/77332628/235423939-a5895072-fc42-4f28-8534-3134b3685923.png)
 
 ```python
 model = models.inception_v3(pretrained=True)

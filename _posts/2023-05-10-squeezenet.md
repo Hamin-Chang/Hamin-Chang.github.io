@@ -60,7 +60,7 @@ input channel을 줄여서 Conv layer의 파라미터 수를 줄인다.
 
 SqueezeNet은 Fire Module로 구성된 모델이다. Fire Module의 구조는 다음과 같다.
 
-이미지1
+![1](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/db80b235-11df-4951-a3f2-3d517efe3f80)
 
 Fire Module은 Squeeze layer와 expand layer 두가지 layer로 이루어져있다. Squeeze layer는 설계전략 1)을 적용해서 1x1 Conv filter로만 구성되어 있다. Expand layer는 1x1와 3x3 filter를 함께 사용한다. Fire Module는 다음의 세가지 하이퍼파라미터를 가지고 있다.
 
@@ -80,7 +80,7 @@ $s_{1x1}<(e_{1x1}) + (e_{3x3})$
 
 전체적인 구조는 다음과 같다. 
 
-이미지2
+![2](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/a28ba323-b91d-4ff6-9e6b-91151e354f52)
 
 **먼저 Squeeze layer는 1x1 conv filter를 통해서 채널을 압축하고 expand layer는 1x1 conv filter와 3x3 conv filter를 통해서 다시 팽창**시키는 역할을 하게 된다. activation으로는 주로 ReLU를 사용한다.
 
@@ -88,7 +88,7 @@ $s_{1x1}<(e_{1x1}) + (e_{3x3})$
 
 논문의 SqueezeNet의 구조는 다음과 같다.
 
-이미지3
+![3](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/c928f74f-12f5-4604-b844-bbe10ae96e4b)
 
 왼쪽이 가장 기본적인 구조인데, SqueezeNet은 먼저 1개의 Conv layer로 시작하고 그 뒤로 8개의 (fire 2~9) fire module이 이어지는 구조다. 마지막으로 Conv layer와 softmax를 거쳐서 output을 출력한다. 
 
@@ -100,7 +100,7 @@ $s_{1x1}<(e_{1x1}) + (e_{3x3})$
 
 하지만 실험 결과 **simple bypass를 적용한 것이 complex bypass를 적용한 것보다 좋은 성능**을 냈다고 한다. 심지어 **simple bypass는 파라미터 수가 늘어나지 않지만, complex bypass는 1x1 conv filter 때문에 파라미터 수도 증가**한다.
 
-이미지4
+![4](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/f3949e42-1a8f-4b04-8d37-9fb2c1ae417e)
 
 
 
@@ -109,7 +109,7 @@ $s_{1x1}<(e_{1x1}) + (e_{3x3})$
 
 SqueezeNet을 다른 model compression 기법들과 비교해본 결과는 다음과 같다. (AlexNet에 model compression을 적용)
 
-이미지5
+![5](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/184e4f6c-65c1-4b99-81f3-423f92d4cd33)
 
 결과를 보면 SqueezeNet 기본구조 만으로도 AlexNet보다 파라미터 수가 50배나 줄었으며, SqueezeNet에 Deep compression을 적용하면 파라미터 수를 510배까지 줄일 수 있다. 여기서 주목할 점은 다른 model compression기법보다 훨씬 크게 파라미터 수를 줄이기도 했지만, **원래 AlexNet에서 성능 하락은 없다**는 것이다. 심지어 Top-1 accuracy는 오히려 상승했다.
 

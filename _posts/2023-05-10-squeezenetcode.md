@@ -14,7 +14,7 @@ categories:
 
 SqueezeNet을 구성하는 module로, 다음과 같이 구성되어 있다.
 
-이미지1
+![1](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/1c6ae6b4-5b0c-49c8-b7e9-c3d7d372ffd4)
 
 
 ```python
@@ -51,7 +51,8 @@ class Fire(nn.Module):
 
 이제 Fire module을 이용해서 전체 SqueezeNet을 구축한다. 다음 이미지의 가운데 모델인 simple bypass를 추가한 SqueezeNet을 구현한다.
 
-이미지2
+![2](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/9f4c2ed4-d800-4659-aa97-a683e7f556d7)
+
 
 
 ```python

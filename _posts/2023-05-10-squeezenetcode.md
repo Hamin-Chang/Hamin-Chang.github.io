@@ -8,6 +8,8 @@ categories:
 ---
 
 ## Pytorch로 SqueezeNet 구현하기
+
+
 이번 글에서는 실제 파이토치 코드로 SqeezeNet 모델을 구현해본다. SqeezeNet 모델에 대한 설명은 [**<U>SqeezeNet 논문 리뷰</U>**](https://hamin-chang.github.io/cv-imageclassification/squeezenet/)를 참고하길 바란다. 이번 글에서 사용하는 코드는 [**<U>weiaicunzai의 repository</U>**](https://github.com/weiaicunzai/pytorch-cifar100/blob/master/models/squeezenet.py)의 코드를 사용했다. 
 
 ### 1. **Fire Module**

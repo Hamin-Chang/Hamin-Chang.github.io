@@ -17,7 +17,7 @@ categories:
 
 논문에서처럼 다음 이미지의 (d)파트의 block을 사용한다. BasicBlock은 (d)의 왼쪽, Bottleneck Block은 오른쪽이다.
 
-이미지1
+![1](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/d12b5121-1084-4e4f-8963-99a8831c6ccf)
 
 
 ```python
@@ -134,7 +134,8 @@ class Bottleneck(nn.Module):
 
 논문에서는 dataset이 CIFAR 계열일때만 나와있다.
 
-이미지2
+![2](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/bc2c1447-5d37-4aea-b20f-b8fd383b28d1)
+
 
 
 ```python

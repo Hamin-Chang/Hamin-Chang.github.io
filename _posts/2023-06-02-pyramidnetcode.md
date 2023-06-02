@@ -9,7 +9,7 @@ categories:
 
 ## Pytorch로 PyramidNet 구현하기
 
-이번 글에서는 실제 pytorch 코드로 pyramidNet을 구현해본다. PyramidNet에 대한 개념은 [<U>**PyramidNet 논문 리뷰**</U>](https://hamin-chang.github.io/cv-imageclassification/pyramidnet/)를 참고하길 바란다. 코드는 [<U>**dyhan0920's repository**</U>](https://github.com/dyhan0920/PyramidNet-PyTorch/blob/master/PyramidNet.py)를 참고했다.
+이번 글에서는 실제 pytorch 코드로 pyramidNet을 구현해본다. PyramidNet에 대한 개념은 [**<U>PyramidNet 논문 리뷰</U>**](https://hamin-chang.github.io/cv-imageclassification/pyramidnet/)를 참고하길 바란다. 코드는 [**<U>dyhan0920's repository</U>**](https://github.com/dyhan0920/PyramidNet-PyTorch/blob/master/PyramidNet.py)를 참고했다.
 
 ### 1. Residual Blocks 구현
 

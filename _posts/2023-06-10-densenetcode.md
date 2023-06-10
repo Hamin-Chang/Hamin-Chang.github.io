@@ -19,7 +19,7 @@ categories:
 
 가장 먼저 DenseNet에 사용되는 Bottleneck block을 정의한다.
 
-이미지1
+![1](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/a551f660-4e46-4270-9011-7d7c95bb8636)
 
 DenseNet에 사용되는 Bottleneck 구조는 특이하게 1x1 conv 연산을 통해서 4 x growth rate개의 feature map을 만들고 그 뒤에 3x3 conv를 통해서 growth rate개의 feature map으로 줄여준다.
 

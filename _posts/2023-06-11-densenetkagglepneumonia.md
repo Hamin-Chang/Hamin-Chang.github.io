@@ -65,7 +65,7 @@ plt.show()
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_3_0.png)
+![1](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/6d683746-52c4-48ee-b6a1-cd165868ae65)
     
 
 
@@ -163,7 +163,7 @@ plt.show()
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_8_0.png)
+![2](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/c778beaf-fa3e-4db5-addf-ccfbb8019085)
     
 
 
@@ -218,7 +218,7 @@ show_batch(train_dl)
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_14_0.png)
+![3](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/c366d6fd-a58b-49e6-93e0-2d7579423805)
     
 
 
@@ -477,7 +477,7 @@ l2 = ax2.legend(loc="best")
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_28_0.png)
+![4](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/86aa811f-3bdd-4050-a427-bb5fd81f65e1)
     
 
 
@@ -562,7 +562,7 @@ for c,i in enumerate(idxs):
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_34_0.png)
+![5](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/1f7f7313-85d6-49d6-8333-42951489323f)
     
 
 
@@ -596,7 +596,7 @@ for row in range(8):
 
 
     
-![png](pytorch-x-ray-transfer-learning-densenet_files/pytorch-x-ray-transfer-learning-densenet_36_0.png)
+![6](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/faf79dae-e9e7-4334-b129-5f921dcdd40d)
     
 
 

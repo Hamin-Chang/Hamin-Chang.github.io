@@ -17,7 +17,7 @@ categories:
 
 ResNeXt block으로는 논문의 Fig 3의 (c)만 사용한다.
 
-이미지10
+![10](https://github.com/Hamin-Chang/Hamin-Chang.github.io/assets/77332628/9cb9dcbc-09ba-49e8-9d3f-dfd92cb76d14)
 
 
 ```python
